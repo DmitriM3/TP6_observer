@@ -1,0 +1,11 @@
+CREATE TABLE `registro_venta` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`fecha` VARCHAR(20) NOT NULL COLLATE 'latin1_swedish_ci',
+	`litros_cargados` INT(11) NOT NULL,
+	`monto_total` DOUBLE NOT NULL,
+	PRIMARY KEY (`id`) USING BTREE
+)
+
+
+
+INSERT INTO registro_venta (fecha, litros_cargados, monto_total, hora) VALUES ('5/11/21', '10', '900', '17:30:30');
